@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<!-- SEO Meta Tags -->
+<meta name="description" content="Loja online de vasos de cerâmica direto da fábrica. Decore jardins, varandas e interiores com estilo. Entrega própria em todo o Brasil.">
+<meta name="keywords" content="são paulo-SP, Garden, Plantas, Adubo, tremenbé, terra, abstrato, vasos polietileno, vasos de plástico, paisagismo, jardim, jardinagem, Gertrudes-SP, c&c, Petz, polo cerâmico, Tambaú-SP, Damme, Embramaco, Delta, Nova Delta, Formigres, Portinari, Almeida, Danni Pisos, Dani Pisos, Bocão Pisos, Bocão Express, vasos Tambaú, vasos Santa Gertrudes, porcelanato, vasos de cerâmica, vasos para jardim, decoração com plantas, ambiente externo, ambiente interno, vasos esmaltados, vasos naturais, Form&terra, Máximo Vasos, vasos atacado, vasos baratos, vasos São Paulo, vasos Curitiba, vasos Campinas">
+<meta name="author" content="majorellegarden">
+
+<!-- Open Graph -->
+<meta property="og:title" content="MAJORELLE GARDEN: Vasos de Cerâmica | Decoração para Jardins e Ambientes.">
+<meta property="og:description" content="Majorelle Garden: vasos exclusivos para jardim, varanda e decoração de interiores. Qualidade, estilo e personalidade para o seu espaço.">
+<meta property="og:image" content="https://i.postimg.cc/9fSwtqjw/selma-foto-fachada.jpg">
+<meta property="og:url" content="https://www.majorellegarden.com.br/">
+<meta property="og:type" content="website">
+
+<title>MAJORELLE GARDEN | HOME</title>
+<link rel="icon" type="image/x-png" href="./assest/imagens/favicon.png" />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+
+<!-- Meta Pixel Code -->
+    <script>
+        !function(f,b,e,v,n,t,s){
+            if(f.fbq)return;
+            n=f.fbq=function(){n.callMethod ? n.callMethod.apply(n,arguments) : n.queue.push(arguments)};
+            if(!f._fbq) f._fbq=n;
+            n.push=n; n.loaded=!0; n.version='2.0'; n.queue=[];
+            t=b.createElement(e); t.async=!0;
+            t.src=v; s=b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t,s);
+        }(window, document,'script','https://connect.facebook.net/en_US/fbevents.js');
+
+        fbq('init', 'AQUI PIXEL ID'); 
+        fbq('track', 'Visualizou Pagina Contatos'); 
+    </script>
+    <noscript>
+      <img height="1" width="1" style="display:none"
+           src="https://www.facebook.com/tr?id= AQUI PIXEL ID "/>
+    </noscript>
+    <!-- End Meta Pixel Code -->
+
+<style>
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #EEEEEE;
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: relative;
+  }
+
+  /* LOGO */
+  .row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #05372e;
+    min-height: 250px;
+    max-height: 250px;
+    width: 100%;
+    border-bottom: 5px solid #f8f8f7; /* borda inferior cinza claro e fina */
+  }
+
+  .row {
+    margin-top: 0px;
+    width: 100%;
+  }
+
+  .row img {
+    width: 300px; /* aumenta a logo */
+    display: block;
+    margin: 0 auto;
+  }
+
+  @media (max-width: 480px) {
+    .row img {
+      width: 250px; /* menor no celular */
+    border-top-left-radius: 15px;
+        border-top-right-radius: 30px;
+        border-bottom-right-radius: 30px;
+        border-bottom-left-radius: 0;
+        box-shadow: 4px 4px 15px rgba(0, 0, 0, 1);
+           }
+
+  }
+
+  /* MENU SUPERIOR */
+  .menucelular {
+    width: 100%;
+    height: 60px;
+    background-color: #956641;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0px;
+    position: relative;
+    z-index: 1001;
+    padding: 20px;
+  }
+
+  .menu-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    cursor: pointer;
+    user-select: none;
+  }
+
+  .menucelular img.icon {
+    width: 20px;
+  }
+
+  .close-btn {
+    text-align: right;
+    padding: 8px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: white;
+    background-color: #956641;
+  }
+
+  .dropdown {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 83%;
+    height: 100%;
+    background-color: #956641;
+    z-index: 1000;
+    padding-top: 0px;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+   font-family: 'Montserrat', sans-serif;
+  }
+
+  .dropdown.show {
+    display: flex;
+  }
+
+  .close-btn {
+    text-align: left;
+    padding: 15px 20px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: white;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    font-weight: bold;
+  }
+
+  .dropdown a {
+    padding: 15px 20px;
+    text-decoration: none;
+    color: white;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 1rem;
+    text-align: left;
+  }
+
+  .dropdown a:hover {
+    background-color: #7a4f2e;
+  }
+
+  .dropdown a.highlight {
+    background-color: #F39C12; /* fundo amarelo */
+    color: black; /* texto preto para contraste */
+    font-weight: bold; /* texto em negrito */
+    padding: 5px 5px; /* altura da linha */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* borda suave */
+  }
+
+  /* TEXTO CENTRAL */
+  .welcome {
+    width: 90%;
+    max-width: 600px;
+    margin: 10px auto;
+    
+  }
+
+  .welcome h1 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #333;
+  }
+
+  .welcome p {
+    font-size: 0.9rem;
+    color: #ffffff;
+    background-color: #777a7a;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: bold;
+    margin: 15px auto;
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  /* BOTÕES CONTATO */
+  .contato-celular {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px; /* espaçamento entre botões */
+    margin-top: 25px;
+  }
+
+  .btn-contato {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 12px 18px;
+    width: 90%;
+    max-width: 320px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: transform 0.2s, background-color 0.3s;
+  }
+
+  .btn-contato img.icon {
+    width: 22px;
+    height: 22px;
+  }
+
+  .btn-contato:hover {
+    transform: scale(1.05);
+  }
+
+  .whatsapp-btn {
+    background-color: #3e413f;
+  }
+
+  .whatsapp-btn:hover {
+    background-color: #081d1a;
+  }
+
+  .email-btn {
+    background-color: #4a90e2;
+  }
+
+  .email-btn:hover {
+    background-color: #357ABD;
+  }
+
+  .endereco-btn {
+    background-color: #6c757d;
+  }
+
+  .endereco-btn:hover {
+    background-color: #565e64;
+  }
+
+  .telefone-btn {
+    background-color: #129deeff;
+  }
+
+  .telefone-btn:hover {
+    background-color: #0f7acc;
+  }
+
+  /* BOTÃO WHATSAPP INFORMAÇÕES */
+  .btn-informacoes {
+    display: block;
+    margin: 20px auto 30px;
+    padding: 12px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 10px;
+    width: 70%;
+    max-width: 250px;
+    background-color: #25D366;
+  }
+
+  .btn-informacoes:hover {
+    background-color: #128C7E;
+  }
+
+  /* RODAPÉ */
+  .direitoscelular {
+    width: 100%;
+    text-align: center;
+    font-size: 0.75rem;
+    color: #f8f7f7;
+    padding: 10px;
+    background-color: #545454;
+    margin-top: auto;
+  }
+
+  .direitoscelular a {
+    color: #a699c5;
+    text-decoration: underline;
+    font-weight: bold;
+  }
+
+  .direitoscelular a:hover {
+    color: #600be9;
+  }
+</style>
+</head>
+<body>
+  <!-- LOGO -->
+  <div class="row">
+    <img src="./assest/imagens/logoloja.png" alt="Logo do Máximo Vasos" class="logo" />
+    
+  </div>
+
+ 
+
+  <div class="welcome">
+    
+    <p>Nosso Site está em construção...<br> <br> Fale Conosco<br> Clicando nos botões abaixo:<br>
+    
+    </p>
+
+    <div class="contato-celular">
+      <a href="tel://11943088888" class="btn-contato telefone-btn fb-button" data-event="Clicou no botão Telefone (Paginacontatocelular)">
+        <img src="./assest/icones/telefone.png" class="icon" alt="Telefone" /> (11) 94308-8888
+      </a>
+
+      <a href="https://api.whatsapp.com/send?phone=5511943088888&text=Olá,%20preciso%20de%20mais%20informações" class="btn-contato whatsapp-btn fb-button " data-event="Clicou no Botão WhatsApp (Paginacontatocelular)" target="_blank" rel="noopener noreferrer">
+        <img src="./assest/icones/whatsapp.png" class="icon" alt="WhatsApp" /> WhatsApp
+      </a>
+
+      <a href="mailto:contato@majorellegarden.com.br" class="btn-contato email-btn fb-button" data-event="Clicou no botão E-mail (Paginacontatocelular)">
+        <img src="./assest/icones/email.png" class="icon" alt="E-mail" /> E-mail
+      </a>
+
+      <a href="https://maps.app.goo.gl/1CK2iy7SQYrf475w7" class="btn-contato endereco-btn fb-button" data-event="Clicou no Botão Localização (rodapé)" target="_blank" rel="noopener noreferrer">
+        <img src="./assest/icones/endereco.png" class="icon" alt="Endereço" /> Endereço
+      </a>
+    </div>
+  </div>
+
+  
+
+  <!-- RODAPÉ -->
+  <div class="direitoscelular">
+    <p>Todos os direitos reservados à Selma Paisagismo e Decoração LTDA. CNPJ: 47.258.792/0001-62 &copy;  |  <span id="ano"></span></p>
+    <p>Site desenvolvido por: <a href="https://instagram.com/diegoborgi" class="fb-button" data-event="Clicou no Botão Criador do Site (rodapé)" target="_blank" rel="noopener noreferrer">Diego Borgi</a></p>
+  </div>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById("dropdownMenu").classList.toggle("show");
+    }
+    window.onclick = function (event) {
+      if (
+        !event.target.closest(".menucelular") &&
+        !event.target.closest(".dropdown")
+      ) {
+        document.getElementById("dropdownMenu").classList.remove("show");
+      }
+    };
+
+    document.getElementById("ano").textContent = new Date().getFullYear();
+
+
+     // Função para disparar Pixel em todos os botões com data-event
+        document.querySelectorAll('.fb-button').forEach(el => {
+            el.addEventListener('click', function(e){
+                const eventName = this.dataset.event;
+                if(eventName && typeof fbq === 'function') {
+                    fbq('track', eventName);
+                }
+                const url = this.href || this.dataset.url;
+                const target = this.target || "_self";
+                if(url) {
+                    e.preventDefault();
+                    if(target === "_blank") window.open(url, "_blank");
+                    else window.location.href = url;
+                }
+            });
+        });
+  </script>
+</body>
+</html>
